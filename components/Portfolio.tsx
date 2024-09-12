@@ -2,6 +2,7 @@ import IconMapPin from "tabler_icons_tsx/map-pin.tsx";
 import IconBrandInstagram from "tabler_icons_tsx/brand-instagram.tsx";
 import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
 import IconBrandTiktok from "tabler_icons_tsx/brand-tiktok.tsx";
+import IconBrandThreads from "tabler_icons_tsx/brand-threads.tsx";
 import IconLink from "tabler_icons_tsx/link.tsx";
 import { ComponentChildren } from "preact/src/index.js";
 
@@ -92,14 +93,17 @@ export default function Portfolio() {
             README.md
           </a>
           <div className="flex space-x-4 mb-2">
-            <IconWrapper url="https://github.com/dunkbing">
-              <IconBrandGithub />
+            <IconWrapper url="https://www.tiktok.com/@dunkbing">
+              <IconBrandTiktok />
+            </IconWrapper>
+            <IconWrapper url="https://www.threads.net/@dunkbingg">
+              <IconBrandThreads />
             </IconWrapper>
             <IconWrapper url="https://www.instagram.com/dunkbingg/">
               <IconBrandInstagram />
             </IconWrapper>
-            <IconWrapper url="https://www.tiktok.com/@dunkbing">
-              <IconBrandTiktok />
+            <IconWrapper url="https://github.com/dunkbing">
+              <IconBrandGithub />
             </IconWrapper>
           </div>
         </div>
