@@ -41,6 +41,11 @@ function LinkItem({ name, desc, url }: Project) {
 export default function Portfolio() {
   const projects: Project[] = [
     {
+      url: "https://saoke-mttq.deno.dev",
+      name: "Sao kê mttq",
+      desc: "Sao kê của Mttq Việt Nam ủng hộ đồng bào thiệt hại do ảnh hưởng bão số 3",
+    },
+    {
       url: "https://text2audio.cc",
       name: "Text2Audio",
       desc: "A simple web app that helps convert text to speech",
