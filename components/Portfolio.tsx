@@ -1,14 +1,18 @@
 import IconMapPin from "tabler_icons_tsx/map-pin.tsx";
-import IconBrandInstagram from "tabler_icons_tsx/brand-instagram.tsx";
 import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
 import IconBrandTiktok from "tabler_icons_tsx/brand-tiktok.tsx";
 import IconBrandThreads from "tabler_icons_tsx/brand-threads.tsx";
+import IconBrandYoutube from "tabler_icons_tsx/brand-youtube.tsx";
 import IconLink from "tabler_icons_tsx/link.tsx";
 import { ComponentChildren } from "preact/src/index.js";
 
-function IconWrapper(
-  { children, url }: { children: ComponentChildren; url: string },
-) {
+function IconWrapper({
+  children,
+  url,
+}: {
+  children: ComponentChildren;
+  url: string;
+}) {
   return (
     <a
       href={url}
@@ -99,13 +103,13 @@ export default function Portfolio() {
           </a>
           <div className="flex space-x-4 mb-2">
             <IconWrapper url="https://www.tiktok.com/@dunkbing">
+              <IconBrandYoutube />
+            </IconWrapper>
+            <IconWrapper url="https://www.tiktok.com/@dunkbing">
               <IconBrandTiktok />
             </IconWrapper>
             <IconWrapper url="https://www.threads.net/@dunkbingg">
               <IconBrandThreads />
-            </IconWrapper>
-            <IconWrapper url="https://www.instagram.com/dunkbingg/">
-              <IconBrandInstagram />
             </IconWrapper>
             <IconWrapper url="https://github.com/dunkbing">
               <IconBrandGithub />
