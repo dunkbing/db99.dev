@@ -47,7 +47,8 @@ export default function Portfolio() {
     {
       url: "https://saoke-mttq.deno.dev",
       name: "Sao kê mttq",
-      desc: "Sao kê của Mttq Việt Nam ủng hộ đồng bào thiệt hại do ảnh hưởng bão số 3",
+      desc:
+        "Sao kê của Mttq Việt Nam ủng hộ đồng bào thiệt hại do ảnh hưởng bão số 3",
     },
     {
       url: "https://text2audio.cc",
