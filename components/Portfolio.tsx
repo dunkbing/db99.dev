@@ -3,6 +3,7 @@ import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
 import IconBrandTiktok from "tabler_icons_tsx/brand-tiktok.tsx";
 import IconBrandThreads from "tabler_icons_tsx/brand-threads.tsx";
 import IconBrandYoutube from "tabler_icons_tsx/brand-youtube.tsx";
+import IconBrandIg from "tabler_icons_tsx/brand-instagram.tsx";
 import IconLink from "tabler_icons_tsx/link.tsx";
 import { ComponentChildren } from "preact/src/index.js";
 
@@ -103,8 +104,8 @@ export default function Portfolio() {
             README.md
           </a>
           <div className="flex space-x-4 mb-2">
-            <IconWrapper url="https://www.tiktok.com/@dunkbing">
-              <IconBrandYoutube />
+            <IconWrapper url="https://www.instagram.com/dunkbingg/">
+              <IconBrandIg />
             </IconWrapper>
             <IconWrapper url="https://www.tiktok.com/@dunkbing">
               <IconBrandTiktok />
