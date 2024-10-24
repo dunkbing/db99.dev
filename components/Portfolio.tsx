@@ -46,6 +46,12 @@ function LinkItem({ name, desc, url }: Project) {
 export default function Portfolio() {
   const projects: Project[] = [
     {
+      url: "https://apps.apple.com/app/tikim/id6727017255",
+      name: "Tikim",
+      desc:
+        "Personal expense tracker iOS app",
+    },
+    {
       url: "https://saoke-mttq.deno.dev",
       name: "Sao kê mttq",
       desc:
