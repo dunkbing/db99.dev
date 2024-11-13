@@ -5,7 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
-import * as $api_tikim from "./routes/api/tikim.ts";
+import * as $api_tikim_id_ from "./routes/api/tikim/[id].ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $tikim_policy from "./routes/tikim-policy.tsx";
@@ -17,7 +17,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
-    "./routes/api/tikim.ts": $api_tikim,
+    "./routes/api/tikim/[id].ts": $api_tikim_id_,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/tikim-policy.tsx": $tikim_policy,
