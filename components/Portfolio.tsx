@@ -48,8 +48,7 @@ export default function Portfolio() {
     {
       url: "https://apps.apple.com/app/tikim/id6727017255",
       name: "Tikim",
-      desc:
-        "Personal expense tracker iOS app",
+      desc: "Personal expense tracker iOS app",
     },
     {
       url: "https://saoke-mttq.deno.dev",
