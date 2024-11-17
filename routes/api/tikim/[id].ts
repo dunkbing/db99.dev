@@ -5,13 +5,15 @@ import { type Handlers } from "$fresh/server.ts";
 const keyPrefix = "tikim";
 
 export const handler: Handlers = {
-  async POST(_req, ctx) {
+  async POST(req, ctx) {
+    const body = await req.json() as { isPro: boolean };
+    const isPro = Boolean(body?.isPro);
     const id = ctx.params.id;
     const kv = await Deno.openKv();
 
     const key = [keyPrefix, id];
 
-    await kv.set(key, true);
+    await kv.set(key, isPro);
     return Response.json({ result: "ok" });
   },
   async GET(_req, ctx) {
