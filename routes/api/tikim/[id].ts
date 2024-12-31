@@ -6,7 +6,7 @@ const keyPrefix = "tikim";
 
 export const handler: Handlers = {
   async POST(req, ctx) {
-    console.log("[tikim], syncing pro status")
+    console.log("[tikim], syncing pro status");
     const body = await req.json() as { isPro: boolean };
     const isPro = Boolean(body?.isPro);
     const id = ctx.params.id;
@@ -18,7 +18,7 @@ export const handler: Handlers = {
     return Response.json({ result: "ok" });
   },
   async GET(_req, ctx) {
-    console.log("[tikim], getting pro status")
+    console.log("[tikim], getting pro status");
     const id = ctx.params.id;
     const kv = await Deno.openKv();
 
