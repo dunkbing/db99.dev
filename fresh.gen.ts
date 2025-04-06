@@ -6,6 +6,7 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $api_tikim_id_ from "./routes/api/tikim/[id].ts";
+import * as $doushi_policy from "./routes/doushi-policy.tsx";
 import * as $getman_policy from "./routes/getman-policy.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
@@ -19,6 +20,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
     "./routes/api/tikim/[id].ts": $api_tikim_id_,
+    "./routes/doushi-policy.tsx": $doushi_policy,
     "./routes/getman-policy.tsx": $getman_policy,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
