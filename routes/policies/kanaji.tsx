@@ -1,8 +1,8 @@
-export default function KanjiPolicy() {
+export default function KanajiPolicy() {
   return (
     <div className="max-w-2xl mx-auto p-6 text-gray-800">
       <h1 className="text-3xl font-bold text-blue-600 mb-4">
-        Kanji Learning App Privacy Policy
+        Kanaji App Privacy Policy
       </h1>
       <p className="italic text-gray-500 mb-6">Last Updated: July 2025</p>
 
@@ -10,7 +10,7 @@ export default function KanjiPolicy() {
         Personal Information
       </h2>
       <p className="mb-4">
-        This Kanji learning app does not collect, store, or share any personal
+        This app does not collect, store, or share any personal
         user data. All features and progress tracking are handled locally on
         your device.
       </p>
