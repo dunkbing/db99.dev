@@ -5,6 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $api_kanaji_feedback from "./routes/api/kanaji/feedback.ts";
 import * as $api_restore_tikim from "./routes/api/restore/tikim.ts";
 import * as $api_tikim_id_ from "./routes/api/tikim/[id].ts";
 import * as $doushi_policy from "./routes/doushi-policy.tsx";
@@ -22,6 +23,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/api/kanaji/feedback.ts": $api_kanaji_feedback,
     "./routes/api/restore/tikim.ts": $api_restore_tikim,
     "./routes/api/tikim/[id].ts": $api_tikim_id_,
     "./routes/doushi-policy.tsx": $doushi_policy,
