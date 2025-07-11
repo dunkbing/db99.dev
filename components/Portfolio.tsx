@@ -2,7 +2,6 @@ import IconMapPin from "tabler_icons_tsx/map-pin.tsx";
 import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
 import IconBrandTiktok from "tabler_icons_tsx/brand-tiktok.tsx";
 import IconBrandThreads from "tabler_icons_tsx/brand-threads.tsx";
-import IconBrandYoutube from "tabler_icons_tsx/brand-youtube.tsx";
 import IconBrandIg from "tabler_icons_tsx/brand-instagram.tsx";
 import IconLink from "tabler_icons_tsx/link.tsx";
 import { ComponentChildren } from "preact/src/index.js";
@@ -46,31 +45,20 @@ function LinkItem({ name, desc, url }: Project) {
 export default function Portfolio() {
   const projects: Project[] = [
     {
-      url: "https://apps.apple.com/app/tikim/id6727017255",
+      url: "https://apps.apple.com/app/apple-store/id6727017255?pt=127348166&ct=db99&mt=8",
       name: "Tikim",
       desc: "Personal expense tracker iOS app",
     },
     {
-      url: "https://saoke-mttq.deno.dev",
-      name: "Sao kê mttq",
+      url: "https://apps.apple.com/app/apple-store/id6746691565?pt=127348166&ct=db99&mt=8",
+      name: "Kanaji - Kanji Learning",
       desc:
-        "Sao kê của Mttq Việt Nam ủng hộ đồng bào thiệt hại do ảnh hưởng bão số 3",
+        "A kanji learning app for iOS, featuring spaced repetition and quizzes.",
     },
     {
       url: "https://text2audio.cc",
       name: "Text2Audio",
       desc: "A simple web app that helps convert text to speech",
-    },
-    {
-      url: "https://tinyimg.cc",
-      name: "TinyIMG",
-      desc: "Online image compressor",
-    },
-    {
-      url: "https://m33t.deno.dev",
-      name: "M33t",
-      desc:
-        "A peer-to-peer, group video call web app, built with Deno and WebRTC.",
     },
   ];
   const skills = ["👨‍💻 Code", "🎹 Piano", "🎮 Games"];
@@ -79,13 +67,6 @@ export default function Portfolio() {
     <div className="flex flex-col items-center min-h-screen font-mono">
       <div className="w-full max-w-md overflow-hidden">
         <div className="flex flex-col items-center p-8">
-          <img
-            src="/profile.jpg"
-            alt="Avatar"
-            width={200}
-            height={200}
-            className="rounded-full mb-6 border-4 border-gray-200 shadow-lg"
-          />
           <h1 className="text-4xl font-bold mb-4 text-gray-800">Dunkbing</h1>
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             {skills.map((skill, index) => (
