@@ -14,6 +14,7 @@ import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $policies_icon_brew from "./routes/policies/icon-brew.tsx";
 import * as $policies_kanaji from "./routes/policies/kanaji.tsx";
+import * as $policies_keystaff from "./routes/policies/keystaff.tsx";
 import * as $policies_tikim from "./routes/policies/tikim.tsx";
 import * as $tikim_policy from "./routes/tikim-policy.tsx";
 import * as $Counter from "./islands/Counter.tsx";
@@ -33,6 +34,7 @@ const manifest = {
     "./routes/index.tsx": $index,
     "./routes/policies/icon-brew.tsx": $policies_icon_brew,
     "./routes/policies/kanaji.tsx": $policies_kanaji,
+    "./routes/policies/keystaff.tsx": $policies_keystaff,
     "./routes/policies/tikim.tsx": $policies_tikim,
     "./routes/tikim-policy.tsx": $tikim_policy,
   },
