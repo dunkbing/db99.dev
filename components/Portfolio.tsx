@@ -56,9 +56,9 @@ export default function Portfolio() {
         "A kanji learning app for iOS, featuring spaced repetition and quizzes.",
     },
     {
-      url: "https://text2audio.cc",
-      name: "Text2Audio",
-      desc: "A simple web app that helps convert text to speech",
+      url: "https://apps.apple.com/app/keystaff/id6753950371?pt=127348166&ct=db99&mt=8",
+      name: "KeyStaff",
+      desc: "A simple iOS app to learn reading music notes",
     },
   ];
   const skills = ["👨‍💻 Code", "🎹 Piano", "🎮 Games"];
