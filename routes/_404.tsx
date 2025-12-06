@@ -1,6 +1,7 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head } from "fresh/runtime";
+import { define } from "../utils.ts";
 
-export default function Error404() {
+export default define.page(function Error404() {
   return (
     <>
       <Head>
@@ -24,4 +25,4 @@ export default function Error404() {
       </div>
     </>
   );
-}
+});

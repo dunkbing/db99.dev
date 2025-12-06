@@ -1,11 +1,9 @@
-/// <reference lib="deno.unstable" />
+import { define } from "../../../utils.ts";
 
-import { type Handlers } from "$fresh/server.ts";
-
-export const handler: Handlers = {
-  async POST(req) {
+export const handler = define.handlers({
+  async POST(ctx) {
     try {
-      const body = await req.json() as {
+      const body = await ctx.req.json() as {
         topic: string;
         text: string;
         user: unknown;
@@ -14,7 +12,7 @@ export const handler: Handlers = {
       if (!body.topic || !body.text) {
         return Response.json(
           { error: "Topic and text are required" },
-          { status: 400 }
+          { status: 400 },
         );
       }
 
@@ -41,8 +39,8 @@ export const handler: Handlers = {
       console.error("[feedback] Error processing feedback:", error);
       return Response.json(
         { error: "Internal server error" },
-        { status: 500 }
+        { status: 500 },
       );
     }
   },
-};
+});

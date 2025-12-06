@@ -1,13 +1,11 @@
-/// <reference lib="deno.unstable"
-
-import { type Handlers } from "$fresh/server.ts";
+import { define } from "../../../utils.ts";
 
 const keyPrefix = "tikim:restore-allowed";
 
-export const handler: Handlers = {
-  async POST(req) {
-    console.log("[tikim], syncing pro status");
-    const body = await req.json() as { restoreAllowed: boolean };
+export const handler = define.handlers({
+  async POST(ctx) {
+    console.log("[tikim], syncing restore allowed status");
+    const body = await ctx.req.json() as { restoreAllowed: boolean };
     const restoreAllowed = Boolean(body?.restoreAllowed);
     const kv = await Deno.openKv();
 
@@ -16,8 +14,8 @@ export const handler: Handlers = {
     await kv.set(key, restoreAllowed);
     return Response.json({ result: "ok" });
   },
-  async GET(_req) {
-    console.log("[tikim], getting pro status");
+  async GET() {
+    console.log("[tikim], getting restore allowed status");
     const kv = await Deno.openKv();
 
     const key = [keyPrefix];
@@ -27,4 +25,4 @@ export const handler: Handlers = {
     }
     return Response.json({ result: value });
   },
-};
+});

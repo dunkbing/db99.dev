@@ -1,4 +1,6 @@
-export default function GetmanPolicy() {
+import { define } from "../utils.ts";
+
+export default define.page(function GetmanPolicy() {
   return (
     <div class="max-w-2xl mx-auto px-4 py-8 prose">
       <h1 class="text-2xl font-bold mb-6">Privacy Policy Summary</h1>
@@ -47,4 +49,4 @@ export default function GetmanPolicy() {
       </div>
     </div>
   );
-}
+});

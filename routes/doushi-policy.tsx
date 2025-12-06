@@ -1,4 +1,6 @@
-export default function () {
+import { define } from "../utils.ts";
+
+export default define.page(function DoushiPolicy() {
   return (
     <div class="max-w-2xl mx-auto p-6 text-gray-800">
       <h1 class="text-3xl font-bold text-blue-600 mb-4">
@@ -53,4 +55,4 @@ export default function () {
       </p>
     </div>
   );
-}
+});

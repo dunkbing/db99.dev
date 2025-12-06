@@ -1,4 +1,6 @@
-export default function TikimPolicy() {
+import { define } from "../../utils.ts";
+
+export default define.page(function TikimPolicy() {
   return (
     <div class="px-4 py-8 mx-auto bg-white">
       ** Quản lý Chi Tiêu Policy **
@@ -11,4 +13,4 @@ export default function TikimPolicy() {
       ngày ghi lại thu chi.<br />
     </div>
   );
-}
+});

@@ -1,9 +1,7 @@
 name: Deploy
 on:
   push:
-    branches: main
-  pull_request:
-    branches: main
+    branches: [main]
 
 jobs:
   deploy:
@@ -22,6 +20,10 @@ jobs:
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
+          cache: true
+
+      - name: Run install step
+        run: "deno install"
 
       - name: Build step
         run: "deno task build"
@@ -30,5 +32,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "db99"
-          entrypoint: "main.ts"
-          root: "."
+          entrypoint: "server.js"
+          root: "./_fresh/"

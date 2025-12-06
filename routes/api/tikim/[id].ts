@@ -1,13 +1,11 @@
-/// <reference lib="deno.unstable"
-
-import { type Handlers } from "$fresh/server.ts";
+import { define } from "../../../utils.ts";
 
 const keyPrefix = "tikim";
 
-export const handler: Handlers = {
-  async POST(req, ctx) {
+export const handler = define.handlers({
+  async POST(ctx) {
     console.log("[tikim], syncing pro status");
-    const body = await req.json() as { isPro: boolean };
+    const body = await ctx.req.json() as { isPro: boolean };
     const isPro = Boolean(body?.isPro);
     const id = ctx.params.id;
     const kv = await Deno.openKv();
@@ -17,7 +15,7 @@ export const handler: Handlers = {
     await kv.set(key, isPro);
     return Response.json({ result: "ok" });
   },
-  async GET(_req, ctx) {
+  async GET(ctx) {
     console.log("[tikim], getting pro status");
     const id = ctx.params.id;
     const kv = await Deno.openKv();
@@ -29,4 +27,4 @@ export const handler: Handlers = {
     }
     return Response.json({ result: value });
   },
-};
+});
