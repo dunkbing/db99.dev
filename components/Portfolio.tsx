@@ -96,9 +96,6 @@ export default function Portfolio() {
             <IconWrapper url="https://www.instagram.com/dunkbingg/">
               <IconBrandIg />
             </IconWrapper>
-            <IconWrapper url="https://www.tiktok.com/@dunkbing">
-              <IconBrandTiktok />
-            </IconWrapper>
             <IconWrapper url="https://www.threads.net/@dunkbingg">
               <IconBrandThreads />
             </IconWrapper>
