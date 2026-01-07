@@ -1,6 +1,19 @@
 import { define } from "../utils.ts";
+import { Head } from "fresh/runtime";
 import IconBrandGooglePlay from "tabler_icons_tsx/brand-google-play.tsx";
 import IconBrandApple from "tabler_icons_tsx/brand-apple.tsx";
+
+const seo = {
+  title: "Kanaji - Learn Japanese Kanji | Free App for iOS & Android",
+  description:
+    "Master Japanese Kanji with Kanaji. Features stroke-by-stroke practice, JLPT-organized study sets, SRS flashcards, and beautiful SVG rendering. Free, no ads, no tracking.",
+  url: "https://db99.dev/kanaji",
+  image: "https://db99.dev/kanaji-og.png",
+  keywords:
+    "japanese, kanji, learn japanese, jlpt, kanji study, japanese learning app, hiragana, katakana, stroke order, flashcards",
+  appStoreId: "6746691565",
+  playStoreId: "kanaji.db99.dev",
+};
 
 const colors = {
   primary: "#4A7C59",
@@ -122,6 +135,46 @@ function FloatingKanji() {
 export default define.page(function Kanaji() {
   return (
     <div class="min-h-screen" style={`background: ${colors.background};`}>
+      <Head>
+        {/* Primary Meta Tags */}
+        <title>{seo.title}</title>
+        <meta name="title" content={seo.title} />
+        <meta name="description" content={seo.description} />
+        <meta name="keywords" content={seo.keywords} />
+        <link rel="canonical" href={seo.url} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={seo.url} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:image" content={seo.image} />
+        <meta property="og:site_name" content="Kanaji" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={seo.url} />
+        <meta name="twitter:title" content={seo.title} />
+        <meta name="twitter:description" content={seo.description} />
+        <meta name="twitter:image" content={seo.image} />
+
+        {/* App Store Smart Banner (iOS) */}
+        <meta name="apple-itunes-app" content={`app-id=${seo.appStoreId}`} />
+
+        {/* Google Play */}
+        <meta
+          name="google-play-app"
+          content={`app-id=${seo.playStoreId}`}
+        />
+
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="db99" />
+        <meta name="application-name" content="Kanaji" />
+        <meta name="theme-color" content={colors.primary} />
+      </Head>
+
       {/* Header */}
       <header
         class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
