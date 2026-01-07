@@ -51,8 +51,7 @@ export default function Portfolio() {
       desc: "Personal expense tracker iOS app",
     },
     {
-      url:
-        "https://apps.apple.com/app/apple-store/id6746691565?pt=127348166&ct=db99&mt=8",
+      url: "https://db99.dev/kanaji",
       name: "Kanaji - Kanji Learning",
       desc:
         "A kanji learning app for iOS, featuring spaced repetition and quizzes.",
