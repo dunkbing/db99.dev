@@ -45,16 +45,21 @@ function LinkItem({ name, desc, url }: Project) {
 export default function Portfolio() {
   const projects: Project[] = [
     {
-      url:
-        "https://apps.apple.com/app/apple-store/id6727017255?pt=127348166&ct=db99&mt=8",
-      name: "Tikim",
-      desc: "Personal expense tracker iOS app",
+      url: "https://dearsql.db99.dev/",
+      name: "DearSQL",
+      desc: "Fast and native database client",
     },
     {
       url: "https://db99.dev/kanaji",
       name: "Kanaji - Kanji Learning",
       desc:
         "A kanji learning app for iOS, featuring spaced repetition and quizzes.",
+    },
+    {
+      url:
+        "https://apps.apple.com/app/apple-store/id6727017255?pt=127348166&ct=db99&mt=8",
+      name: "Tikim",
+      desc: "Personal expense tracker iOS app",
     },
     {
       url:
